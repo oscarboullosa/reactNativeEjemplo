@@ -1,6 +1,8 @@
 import { StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../../components/EditScreenInfo';
+import LeagueTeams from '../../components/Teams';
+import Teams from '../../components/Teams';
 import { Text, View } from '../../components/Themed';
 
 export default function TabThreeScreen() {
@@ -8,6 +10,7 @@ export default function TabThreeScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Tab Three</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <LeagueTeams/>
       <EditScreenInfo path="app/(tabs)/three.tsx" />
     </View>
   );
