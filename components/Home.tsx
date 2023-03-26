@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import { ImageBackground, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
+import SvgComponent from '../assets/background/back1';
 import Colors from '../constants/Colors';
 import { ExternalLink } from './ExternalLink';
 import { MonoText } from './StyledText';

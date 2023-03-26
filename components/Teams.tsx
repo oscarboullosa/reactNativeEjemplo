@@ -36,7 +36,7 @@ const TeamPlayers = ({ teamTitle, players }: ITeamPlayersProps) => {
 const LeagueTeams = () => {
     const [teams, setTeams] = useState<ITeam[]>([]);
     useEffect(() => {
-        fetch(`https://en.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=Liga%20Espa%C3%B1ola%20de%20F%C3%BAtbol%20Primera%20Divisi%C3%B3n&origin=*`)
+        fetch(`https://es.wikipedia.org/api/rest_v1/page/html/Primera_Divisi%C3%B3n_de_Espa%C3%B1a`)
   .then(response => response.json())
   .then(data => {
     const pages = data.query.pages;

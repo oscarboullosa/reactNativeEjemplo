@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import SvgComponentTwo from '../../assets/background/back2';
 
 import EditScreenInfo from '../../components/EditScreenInfo';
 import LeagueTeams from '../../components/Teams';
@@ -10,6 +11,7 @@ export default function TabThreeScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Tab Three</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
+      <SvgComponentTwo/>
       <LeagueTeams/>
       <EditScreenInfo path="app/(tabs)/three.tsx" />
     </View>
